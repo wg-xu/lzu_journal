@@ -1,0 +1,67 @@
+\documentclass[a4paper]{ctexart}
+\usepackage{lzu_journal}
+\usepackage{zhlipsum, lipsum}
+\usepackage{hyperref}
+\usepackage[UTF8]{ctex}
+
+\usepackage{fontspec}  % 如果你使用XeLaTeX，可能需要加载这个宏包
+\usepackage[backend=biber, style=gb7714-2015]{biblatex}
+\addbibresource{bibfile.bib}  % 替换成你的参考文献文件
+\usepackage[style=authoryear, giveninits=false]{biblatex}% 禁用人名缩写
+
+
+
+\title[\rmfamily\zihao{3}English title]{
+    中文题目
+}
+\author[\rmfamily\zihao{5}Wang Xu, Chen Huijie]{
+    作者\footnote{
+    第一页页角附作者简介，内容包括姓名、性别、所属院系、导师和研究方向。}
+}
+\institude[\rmfamily\zihao{-5}Lanzhou University , Lanzhou 734300, China]{
+    兰州大学 \ 信息科学与工程学院，兰州，734300 
+}
+
+% 所有段后距为0.5
+\setlength{\bibitemsep}{0.5\baselineskip}
+
+\begin{document}
+    \textbf{《兰州大学学报》稿件 word格式}，大标题: 三号，粗体。1级标题: 小四号，粗体。2级标题: 五号。作者名:。单位:。摘要，关键词:小五号。正文:五号。以上行距为固定值 16。参考文献:小五号，行距为固定值 13。所有段后距为0.5。图表标题为小五号，粗体。图中文字和数字为8 号。表中文字和数字为六号。全文的页边距为上 1.7 厘米，下 1.6 厘米，左 1.6 厘米，右 1.6 |厘米。
+    
+
+    \maketitle
+    \abstract{
+        主要 说明文章的 研究目的、方法和主要结果。
+    }
+    \keywords{关键词 1；关键词 2 （3～5 个）}
+
+
+    \vspace{1em}
+    陌上菅（Carex thunbergii Steud）为莎草科苔草属草本植物。主要分布于东北、华北地区和内蒙古，日本也有\cite{lundgren1985seasonal}。在安徽主要分布在长江沿岸和国家级自然保护区升金湖等主要湿地，常形成大面积的湿地优势种群，为当地水牛喜食的牧草资源。因此，研究陌上菅生理生态特性、草地的生长潜能，对于合理开发利用陌上菅资源、保护湿地生态环境和发展放牧畜牧业等都具有重要意义。目前对湿地苔草属植物的研究主要集中在年龄结构\cite{黄高宝2005植物化感作用影响因素的再认识}、种群生殖构建\cite{郭海林2007结缕草属优良品系}和生物量\cite{郑慧莹1999松嫩平原盐生植物与盐碱化草地的恢复,carneiro1960slash}等方面；对放牧利用植物的水淹恢复研究主要集中在无性系生长规律和生物构件等方面\cite{辛希孟1994信息技术与信息服务国际研讨会论文集,钟文发1996非线性规划在可燃毒物配置中的应用,Rosenthall1963Proceedings,黄东益2003旗草内生真菌的特异}；而水淹后苔草属植物恢复过程中的生理指标和营养成分的恢复却未见报道。本研究试图通过对没顶水淹以后陌上菅恢复过程中叶的 SOD、POD 活性和 MDA、可溶性糖、叶绿素、脯氨酸的含量以及地上部分粗脂肪、粗纤维、粗蛋白等营养成分含量动态变化的研究，探讨陌上菅对水淹的恢复能力，为陌上菅牧草资源合理开发应用提供科学依据。
+    \section{材料与方法}
+    \subsection{材料和样地}
+    \subsection{根瘤菌的分离}
+    \subsection{抗逆性测定}
+    \subsubsection{耐盐性测定}
+    \subsubsection{耐酸碱性测定}
+    \section{结果与分析}
+    \section{讨论}
+    \section{结论}
+
+
+\newpage
+    % 设置小五号字体，行距为13
+    \renewcommand*{\bibfont}{\small\linespread{1.0}\selectfont}
+    
+    \printbibliography
+
+    
+    \maketitle
+    \abstract[english]{
+        The relative importance of…
+    }
+    \keywords[english]{
+        annual plants; community level; …
+    }
+\end{document}
+
